@@ -1,0 +1,53 @@
+.itemLabel {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black 2px solid;
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.itemButtonWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemFaveButton {
+    border: red 2x solid;
+    background: white;
+    color: black;
+    height: 30px;
+    width: auto;
+}
+
+.itemUnfaveButton {
+    border: red 2x solid;
+    background: white;
+    color: black;
+    height: 30px;
+    width: auto;
+}
+
+.itemButton {
+    border: black 2x solid;
+    background: white;
+    color: black;
+    height: 30px;
+    width: auto;
+}
+
+.itemH1 {
+    font-size: 1.5rem;
+}
+
+.itemP {
+    font-size: 1rem;
+}
