@@ -1,6 +1,7 @@
 import request from 'superagent';
 
-const URL = 'https://font-folder.herokuapp.com';
+// const URL = 'https://font-folder.herokuapp.com';
+const URL = 'http://localhost:3000'
 
 export async function signUp(email, password) {
 
@@ -20,12 +21,12 @@ export async function signIn(email, password) {
     return response.body;
 }
 
-export async function getFonts(sort) {
+export async function getFonts(query) {
 
     const response = await request
-        .get(`${URL}/fonts?sort=${sort}`)
+        .get(`${URL}/fonts?sort=${query}`)
 
-    return response.body.results;
+    return response.body;    
 }
 
 export async function getCategories() {

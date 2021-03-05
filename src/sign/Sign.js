@@ -35,7 +35,7 @@ export default class Sign extends Component {
 
             this.props.handleUserChange(user);
 
-            // this.props.history.push('/search');            
+            this.props.history.push('/search');            
         } catch(e) {
             this.setState({ error: e.response.body.error})
         }
