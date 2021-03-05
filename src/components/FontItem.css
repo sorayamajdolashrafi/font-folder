@@ -6,6 +6,18 @@
     align-items: center;
     justify-content: center;
     border: black 2px solid;
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.itemButtonWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .itemFaveButton {

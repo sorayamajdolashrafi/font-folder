@@ -8,6 +8,7 @@ export default class SearchList extends Component {
             font => <FontItem
                 key={font.name}
                 fontProp={font}
+                favoriteCheck={this.props.favoriteCheck}
                 handleFave={this.props.handleFave}
                 handleUnfave={this.props.handleUnfave}
                 handleDetails={this.props.handleDetails} />

@@ -1,7 +1,7 @@
 import request from 'superagent';
 
-// const URL = 'https://font-folder.herokuapp.com';
-const URL = 'http://localhost:3000'
+const URL = 'https://font-folder.herokuapp.com';
+// const URL = 'http://localhost:3000'
 
 export async function signUp(email, password) {
 
@@ -56,10 +56,10 @@ export async function addFavorite(font, token) {
     return response.body;
 }
 
-export async function deleteFavorite(fontID, token) {
+export async function deleteFavorite(fontName, token) {
 
     const response = await request
-        .delete(`${URL}/api/favorites/${fontID}`)
+        .delete(`${URL}/api/favorites/${fontName}`)
         .set('Authorization', token)
 
     return response.body;
