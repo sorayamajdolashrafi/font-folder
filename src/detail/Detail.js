@@ -4,8 +4,8 @@ import './Detail.css';
 export default class Detail extends Component {
     render() {
         return (
-            <div>
-                
+            <div className="detailMain">
+                detail page
             </div>
         )
     }

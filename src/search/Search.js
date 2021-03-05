@@ -4,8 +4,8 @@ import './Search.css';
 export default class Search extends Component {
     render() {
         return (
-            <div>
-                
+            <div className="searchMain">
+                search page
             </div>
         )
     }

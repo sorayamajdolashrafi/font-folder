@@ -4,8 +4,8 @@ import './Favorites.css';
 export default class Favorites extends Component {
     render() {
         return (
-            <div>
-                
+            <div className="favoritesMain">
+                favorites page
             </div>
         )
     }

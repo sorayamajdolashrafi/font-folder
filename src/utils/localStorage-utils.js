@@ -1,6 +1,6 @@
 export const USER = 'USER'
 
-export function gerUserFromLocalStorage() {
+export function getUserFromLocalStorage() {
     const user = localStorage.getItem(USER);
 
     try {
