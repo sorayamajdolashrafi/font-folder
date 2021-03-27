@@ -1,7 +1,7 @@
 import request from 'superagent';
 
-// const URL = 'https://font-folder.herokuapp.com';
-const URL = 'http://localhost:3000'
+const URL = 'https://font-folder.herokuapp.com';
+// const URL = 'http://localhost:3000'
 
 export async function getFonts(query) {
 
