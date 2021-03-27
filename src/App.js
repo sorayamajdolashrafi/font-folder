@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header.js';
 import Home from './home/Home.js';
-import Sign from './sign/Sign.js';
+import Login from './login/Login.js';
 import Search from './search/Search.js';
 import Detail from './detail/Detail.js';
 import Favorites from './favorites/Favorites.js';
@@ -41,10 +41,10 @@ export default class App extends Component {
               render={(routerProps) => <Home {...routerProps} />}
             />
             <Route
-              path="/signin"
+              path="/login"
               exact
               render={(routerProps) => 
-                <Sign
+                <Login
                   handleUserChange={this.handleUserChange} 
                   {...routerProps} />}
             />

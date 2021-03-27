@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './SignForm.css';
+import './LoginForm.css';
 
-export default class SignForm extends Component {
+export default class LoginForm extends Component {
     render() {
         return (
 
@@ -9,26 +9,26 @@ export default class SignForm extends Component {
                 className="form" 
                 onSubmit={this.props.handleSubmit}>
 
-                <label className="signLabel">
+                <label className="loginLabel">
                     <input 
-                        className="signInput"
+                        className="loginInput"
                         value={this.props.email}
                         onChange={this.props.handleEmailChange}
                         placeholder="yikes@yikes.com" />
-                    <h3 className="signH3">email</h3>
+                    <h3 className="loginH3">email</h3>
                 </label>
 
-                <label className="signLabel">
+                <label className="loginLabel">
                     <input 
-                        className="signInput"
+                        className="loginInput"
                         value={this.props.password}
                         onChange={this.props.handlePasswordChange}
                         placeholder="1234" 
                         type="password" />
-                    <h3 className="signH3">password</h3>
+                    <h3 className="loginH3">password</h3>
                 </label>
 
-                <button className="signButton">it's font time!</button>
+                <button className="loginButton">it's font time!</button>
             </form>
 
         )

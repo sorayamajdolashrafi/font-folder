@@ -11,8 +11,7 @@ export default class Search extends Component {
     }
 
     componentDidMount = async () => {
-        if (this.props.user.token) await this.fetchFonts();
-        
+        if (this.props.user.token) await this.fetchFonts();        
     }
 
     fetchFonts = async () => {

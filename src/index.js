@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />  
+      <link href="https://fonts.googleapis.com/css2?family=Oi&family=Roboto+Slab&family=Source+Code+Pro&display=swap" rel="stylesheet" />   
+    </head>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

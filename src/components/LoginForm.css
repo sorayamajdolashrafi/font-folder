@@ -12,7 +12,7 @@
     padding-bottom: 30px;
 }
 
-.signInput {
+.loginInput {
     width: auto;
     min-width: 45%;
     height: 30px;
@@ -22,7 +22,7 @@
     text-align: center;
 }
     
-.signLabel {
+.loginLabel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,13 +31,13 @@
     padding-bottom: 5px;
 }
 
-.signH3 {
+.loginH3 {
     margin: 0px;
     font-size: .9rem;
     color: rgb(78, 78, 78);
     font-weight: 500;
 }
 
-.signButton {
+.loginButton {
     margin-top: 15px;
 }

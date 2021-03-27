@@ -10,7 +10,7 @@ export default class Header extends Component {
                 {
                     (!this.props.user || !this.props.user.token) && <>
                     <NavLink 
-                        to="/signin" 
+                        to="/login" 
                         className="navlink">sign in</NavLink>
                     <NavLink 
                         to="/" 
