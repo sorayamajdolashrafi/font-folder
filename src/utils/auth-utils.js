@@ -3,20 +3,20 @@ import request from 'superagent';
 const URL = 'https://font-folder.herokuapp.com';
 // const URL = 'http://localhost:3000'
 
-async function getUserAuth(email, password, authRoute) {
-	const response = await request.post(`${URL}/${authRoute}`)
-			.send({ email, password });
+export async function signUp(email, password) {
+	
+	const response = await request
+		.post(`${URL}/auth/signup`)
+		.send({ email, password })
 
-		return response.body;
+	return response.body;
 }
 
-export async function loginOrSignup(email, password) {
-	let response = {};
-	try {
-		response = await getUserAuth(email, password, 'auth/signin');
-	}
-	catch(e) {
-		response = await getUserAuth(email, password, 'auth/signup');
-	}
-	return response;
+export async function login(email, password) {
+	
+	const response = await request
+		.post(`${URL}/auth/signin`)
+		.send({ email, password })
+
+	return response.body;
 }
