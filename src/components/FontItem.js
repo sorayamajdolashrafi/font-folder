@@ -17,8 +17,10 @@ export default class FontItem extends Component {
                         onClick={() => this.props.handleFave(this.props.fontProp)}>fave</button>
                 }
                 </div>
-                <h1 className="itemH1">{this.props.fontProp.name}</h1>
-                <p className="itemP">A quick brown fox jumps over the lazy dog.</p>                
+                <h1 className="itemH1"
+                    style={ {fontFamily: `'${this.props.fontProp.name}', ${this.props.fontProp.category}`} }>{this.props.fontProp.name}</h1>
+                <p className="itemP"
+                    style={ {fontFamily: `'${this.props.fontProp.name}', ${this.props.fontProp.category}`} }>A quick brown fox jumps over the lazy dog.</p>                
                 <button 
                     className="itemButton"
                     onClick={() => this.props.handleDetails}>see more details</button>

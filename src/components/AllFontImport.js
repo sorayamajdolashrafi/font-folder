@@ -22,7 +22,7 @@ export default class AllFontImport extends Component {
 
     // a function that strings together all the fonts with & between them
 
-    // lin k = `https://fonts.googleapis.com/css2?${all the fonts}display=swap`
+    // link = `https://fonts.googleapis.com/css2?${all the fonts}display=swap`
 
     render() {
         const shapedResponse = fonts.map(font => {
